@@ -1,0 +1,19 @@
+.User {
+  text-align: center;
+}
+
+.hovered {
+  background: #f0f0f0;
+
+  &.selected {
+    background: #c0c0c0;
+  }
+}
+
+.selected {
+  background: #d0d0d0;
+}
+
+.active {
+  font-weight: bold;
+}
