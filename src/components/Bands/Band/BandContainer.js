@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { 
-  isBandHovered,
+  isBandHighlighted,
   isBandSelected,
   isBandActive,
 } from 'store/band/selectors/single'
@@ -13,7 +13,7 @@ import Band from './Band'
 
 export default connect(
   (state, { data: { id } }) => ({
-    hovered: isBandHovered(state, id),
+    highlighted: isBandHighlighted(state, id),
     selected: isBandSelected(state, id),
     active: isBandActive(state, id),
   }),

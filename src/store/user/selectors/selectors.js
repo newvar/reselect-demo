@@ -9,7 +9,7 @@ export const getHoveredUserId = (state) => user(state).hoveredUserId
 export const getHoveredUsersMap = createSelector(
   getUsers,
   getHoveredUserId,
-  (users, hoveredUserId) => users.reduce((map, user) => ({
+  (users, hoveredUserId, ) => users.reduce((map, user) => ({
     ...map,
     [user.id]: user.id === hoveredUserId,
   }), {}),

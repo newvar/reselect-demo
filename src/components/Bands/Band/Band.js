@@ -8,7 +8,7 @@ export default ({
     id,
     name,
   },
-  hovered,
+  highlighted,
   selected,
   active,
   setHoveredBand,
@@ -17,7 +17,7 @@ export default ({
 }) => (
   <div
     className={cx(styles.Band, {
-      [styles.hovered]: hovered,
+      [styles.highlighted]: highlighted,
       [styles.selected]: selected,
       [styles.active]: active,
     })}

@@ -9,7 +9,7 @@ export default ({
     firstName,
     lastName,
   },
-  hovered,
+  highlighted,
   selected,
   active,
   setHoveredUser,
@@ -18,7 +18,7 @@ export default ({
 }) => (
   <div
     className={cx(styles.User, {
-      [styles.hovered]: hovered,
+      [styles.highlighted]: highlighted,
       [styles.selected]: selected,
       [styles.active]: active,
     })}

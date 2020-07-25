@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { 
-  isUserHovered,
+  isUserHighlighted,
   isUserSelected,
   isUserActive,
 } from 'store/user/selectors/single'
@@ -13,7 +13,7 @@ import User from './User'
 
 export default connect(
   (state, { data: { id } }) => ({
-    hovered: isUserHovered(state, id),
+    highlighted: isUserHighlighted(state, id),
     selected: isUserSelected(state, id),
     active: isUserActive(state, id),
   }),
